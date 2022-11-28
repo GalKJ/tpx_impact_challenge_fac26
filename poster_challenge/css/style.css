@@ -123,3 +123,12 @@ grid-column: 3 / 4;
     grid-row: 8 / 9;
     grid-column: 3 / 4;
     }
+
+#item-10-p {
+    color: transparent;
+    text-shadow: 0 0 1.5px white;
+    font-size: 3px;
+    position: relative;
+    top: 74px;
+    left: 6px;
+}
