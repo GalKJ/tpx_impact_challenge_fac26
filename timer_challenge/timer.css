@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(to right, hotpink, rebeccapurple);
+    background: linear-gradient(to right, rgb(180, 187, 180), rgb(177, 177, 195));
 }
 
 h1 {
@@ -37,28 +37,22 @@ h1 {
 }
 
 button {
-    border-top: 1px solid #f797f5;
     background: linear-gradient(#54aae3, #d665c5);
     padding: 14px 28px;
     margin: 0.5rem;
     border-radius: 40px;
-    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-    text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
     color: white;
     font-size: 20px;
     font-family: Helvetica, Arial, Sans-Serif;
     text-decoration: none;
+    transition: 0.4s;
   }
   
   button:hover {
-    border-top: 1px solid #f797f5;
-    background: linear-gradient(#d665c5, #54aae3);
-    color: white;
+    opacity: 0.7;
     
   }
   
   button:active {
-    border-top: 1px solid #f797f5;
     background: #d665c5;
-    color: white;
   }
