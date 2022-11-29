@@ -24,3 +24,41 @@ h1 {
     margin: auto;
     
 }
+
+#timer {
+    margin: 1rem;
+    font-size: 3rem;
+    padding: 1rem;
+    max-width: 360px;
+}
+
+.controls {
+    display: flex;
+}
+
+button {
+    border-top: 1px solid #f797f5;
+    background: linear-gradient(#54aae3, #d665c5);
+    padding: 14px 28px;
+    margin: 0.5rem;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
+    color: white;
+    font-size: 20px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+  }
+  
+  button:hover {
+    border-top: 1px solid #f797f5;
+    background: linear-gradient(#d665c5, #54aae3);
+    color: white;
+    
+  }
+  
+  button:active {
+    border-top: 1px solid #f797f5;
+    background: #d665c5;
+    color: white;
+  }
