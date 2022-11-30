@@ -51,3 +51,9 @@
         clearInterval(interval);
         interval = null;
     }
+
+    function reset () {
+        stop();
+        centiSeconds = 0;
+        timeEl.innerText = '00:00:00:000';
+    }
