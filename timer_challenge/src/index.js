@@ -4,7 +4,7 @@
     const stopButton = document.querySelector('#stop');
     const resetButton = document.querySelector('#reset');
 
-    let seconds = 0;
+    let centiSeconds = 0;
     let interval = null;
 
 // Event listeners
@@ -12,13 +12,14 @@
 
 
     function timer() {
-        seconds ++;
+        centiSeconds ++;
 
-        let hrs = Math.floor(seconds / 3600);
-        let mins = Math.floor((seconds - (hrs * 3600)) / 60);
-        let secs = seconds % 60;
-        let centi = seconds * 100;
+        let hrs = Math.floor(centiSeconds / 360000);
+        let mins = Math.floor((centiSeconds - (hrs * 360000)) / 6000);
+        let secs = centiSeconds / 100;
+        let centi = centiSeconds % 100;
 
+        // if (centi < 100) centi = '00' + centi;
         if (secs < 10) secs = '0' + secs;
         if (mins < 10) mins = "0" + mins;
         if (hrs < 10) hrs = "0" + hrs;
