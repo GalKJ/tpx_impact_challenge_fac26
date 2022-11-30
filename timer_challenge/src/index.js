@@ -3,6 +3,7 @@
     const startButton = document.querySelector('#start');
     const stopButton = document.querySelector('#stop');
     const resetButton = document.querySelector('#reset');
+    const lapButton = document.querySelector('#lap');
 
     let centiSeconds = 0;
     let interval = null;
@@ -11,6 +12,7 @@
     startButton.addEventListener('click', start);
     stopButton.addEventListener('click', stop);
     resetButton.addEventListener('click', reset);
+    lapButton.addEventListener('click', lap);
 
 
     function timer () {
@@ -47,4 +49,8 @@
         stop();
         centiSeconds = 0;
         timeEl.innerText = '00:00:00:00';
+    }
+
+    function lap () {
+        console.log(timeEl.innerText);
     }
