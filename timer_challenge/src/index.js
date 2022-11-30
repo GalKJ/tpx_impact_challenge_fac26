@@ -4,6 +4,8 @@
     const stopButton = document.querySelector('#stop');
     const resetButton = document.querySelector('#reset');
     const lapButton = document.querySelector('#lap');
+    const lapList = document.querySelector('#lap-times');
+
 
     let centiSeconds = 0;
     let interval = null;
@@ -52,5 +54,5 @@
     }
 
     function lap () {
-        console.log(timeEl.innerText);
+        lapList.innerText = timeEl.innerText;
     }
