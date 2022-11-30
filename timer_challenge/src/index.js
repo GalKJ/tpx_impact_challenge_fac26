@@ -9,6 +9,8 @@
 
 // Event listeners
     startButton.addEventListener('click', start);
+    stopButton.addEventListener('click', stop);
+    resetButton.addEventListener('click', reset);
 
 
     function timer() {
@@ -19,7 +21,7 @@
         let secs = centiSeconds / 100;
         let centi = centiSeconds % 100;
 
-        // if (centi < 100) centi = '00' + centi;
+        if (centi < 100) centi = '00' + centi;
         if (secs < 10) secs = '0' + secs;
         if (mins < 10) mins = "0" + mins;
         if (hrs < 10) hrs = "0" + hrs;
@@ -33,4 +35,9 @@
         }
 
         interval = setInterval(timer, 1000);
+    }
+
+    function stop () {
+        clearInterval(interval);
+        interval = null;
     }
