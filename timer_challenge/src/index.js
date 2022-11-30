@@ -4,6 +4,7 @@
     const stopButton = document.querySelector('#stop');
     const resetButton = document.querySelector('#reset');
     const lapButton = document.querySelector('#lap');
+    const clearLapsButton = document.querySelector('#clear-laps');
     const lapList = document.querySelector('#lap-list');
 
 
@@ -15,6 +16,7 @@
     stopButton.addEventListener('click', stop);
     resetButton.addEventListener('click', reset);
     lapButton.addEventListener('click', lap);
+    clearLapsButton.addEventListener('click', clearLaps);
 
 // Function to define hrs, mins, secs and centi, increment the centiseconds and render the variable values to the timeEl variables inner text.
     function timer () {
@@ -53,12 +55,25 @@
         stop();
         centiSeconds = 0;
         timeEl.innerText = '00:00:00:00';
-        lapList.innerHTML = `<p></p>`;
     }
 
 // Function to create a new paragraph, render the current timeEl value as it's inner text and append it to the lapList div. 
     function lap () {
         const lap = document.createElement('p');
-        lap.textContent = timeEl.innerText;
+        lap.textContent = `Lap ${timeEl.innerText}`;
         lapList.appendChild(lap);
+
+        localStorage.setItem('laps', `${lapList.innerHTML}`);
     }
+
+// Function to clear the innerHTML of the lapList div.
+    function clearLaps () {
+        lapList.innerHTML = `<p></p>`;
+    }
+
+// Function to render local storage HTML in lapList div on page load.
+    function loadLaps () {
+        lapList.innerHTML = localStorage.getItem('laps');
+    }
+
+    loadLaps();
