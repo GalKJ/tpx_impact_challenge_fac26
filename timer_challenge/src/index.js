@@ -54,5 +54,7 @@
     }
 
     function lap () {
-        lapList.innerText = timeEl.innerText;
+        const lap = document.createElement('p');
+        lap.textContent = timeEl.innerText;
+        lapList.appendChild(lap);
     }
