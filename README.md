@@ -16,6 +16,12 @@ Please feel free to clone the repo using this url https://github.com/d0g3bl2/tpx
 
 ---
 
+### Deployment 
+
+To view the timer challenge please follow this link https://d0g3bl2.github.io/tpx_impact_challenge_fac26/ to the github pages.
+
+---
+
 ### Part one - reproduce a poster.
 
 - Inside the [poster_challenge](https://github.com/d0g3bl2/tpx_impact_challenge_fac26/tree/main/poster_challenge) directory is `poster.html` which is linked to `poster.css` found in the `css` directory
