@@ -28,7 +28,7 @@ Please feel free to clone the repo using this url https://github.com/d0g3bl2/tpx
 
 ### Part two - Create a functioning stopwatch.
 
-- Inside the [root directory](https://github.com/d0g3bl2/tpx_impact_challenge_fac26) directory is `index.html` which is linked to `timer.css` and `index.js`.
+- Inside the [root directory](https://github.com/d0g3bl2/tpx_impact_challenge_fac26) is `index.html` which is linked to `timer.css` and `index.js`.
 - The timer allows the user to start, stop and reset the time as well as render lap times into the UI which are stored in local storage as well as clearing local storage should they wish. The timer is responsive in mobile and desktop enviroments using
 
 `@media only screen and (max-width: 750px) {
