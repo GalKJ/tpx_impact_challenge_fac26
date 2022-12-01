@@ -5,6 +5,7 @@
     const resetButton = document.querySelector('#reset');
     const lapButton = document.querySelector('#lap');
     const clearLapsButton = document.querySelector('#clear-laps');
+    const clearLapStorageButton = document.querySelector('#clear-lap-storage');
     const lapList = document.querySelector('#lap-list');
 
 
@@ -17,6 +18,7 @@
     resetButton.addEventListener('click', reset);
     lapButton.addEventListener('click', lap);
     clearLapsButton.addEventListener('click', clearLaps);
+    clearLapStorageButton.addEventListener('click', clearLapStorage);
 
 // Function to define hrs, mins, secs and centi, increment the centiseconds and render the variable values to the timeEl variables inner text.
     function timer () {
@@ -74,6 +76,11 @@
 // Function to render local storage HTML in lapList div on page load.
     function loadLaps () {
         lapList.innerHTML = localStorage.getItem('laps');
+    }
+
+// Function to clear laps kept in local storage.
+    function clearLapStorage () {
+        localStorage.clear();
     }
 
     loadLaps();
