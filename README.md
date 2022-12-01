@@ -44,7 +44,7 @@ Please feel free to clone the repo using this url https://github.com/d0g3bl2/tpx
 
 ### User Stories
 
-I broke the project down into the following user stories to get a clear idea of the different steps.
+I broke the timer challenge down into the following user stories to get a clear idea of the different steps.
 
 - The user wants to view a time display ✔️ 
 - The current elapsed time should be in the following format 00:00:00:00 (hours, minutes, seconds, centiseconds) ✔️
@@ -52,9 +52,10 @@ I broke the project down into the following user stories to get a clear idea of 
 - Pause button: A button to pause the running timer. ✔️
 - Reset button: A button to reset the timer to zero. ✔️
 - Lap button: A button to write the time to a list/table of laps (this would not pause the timer). The results should be shown on screen and still be visible if the page is refreshed. ✔️
+- Clear lap history button: A button to clear any lap history ✔️
 
 ---
 
 ### Thanks 
 
-I hope you have fun with the timer and beat your personal best 🙂
+I hope you enjoy the poster have fun with the timer and beat your personal best 🙂
