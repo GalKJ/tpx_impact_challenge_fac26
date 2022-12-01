@@ -36,7 +36,7 @@ To view the timer challenge please follow this link https://d0g3bl2.github.io/tp
 
 - I used CSS `grid` to divide my `div` with a class of `container` into explicitly defined `grid-template-row`'s and `grid-template-column`'s.
 
-
+![image](https://user-images.githubusercontent.com/99536044/205154348-7ecf195a-aeda-46f3-a584-4c2f4fe3c559.png)
 
 - Since the original poster was very old and had discoloured over time I tried to give my reproduction a slightly worn look by making the text colour transparent and adding a `text-shadow` with 0 values for the x and y offsets and a small blur radius of `1.5px` 
 
@@ -60,7 +60,7 @@ To view the timer challenge please follow this link https://d0g3bl2.github.io/tp
 
 ![image](https://user-images.githubusercontent.com/99536044/205152319-8a94c432-cf4e-41f5-b795-27c1a04d2576.png)
 
-- The timer allows the user to start, stop and reset the time as well as render lap times into the UI which are stored in local storage as well as clearing local storage should they wish. The timer is responsive in mobile and desktop enviroments using
+- The timer allows the user to start, stop and reset the time as well as render lap times into the UI which are stored in local storage as well as clearing local storage should they wish. The timer is responsive in mobile and desktop enviroments using CSS media queries
 
 `@media only screen and (max-width: 750px) {
 .controls {
