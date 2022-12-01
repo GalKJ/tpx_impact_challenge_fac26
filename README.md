@@ -30,6 +30,11 @@ To view the timer challenge please follow this link https://d0g3bl2.github.io/tp
 
 ![Josef M%FCller-Brockmann on Flickr - Photo Sharing!](https://user-images.githubusercontent.com/99536044/205094095-a76c87e4-849d-4247-92ea-79c984c7d3b3.jpg)
 
+- Since the original poster was very old and had discoloured over time I tried to give my reproduction a slightly worn look by making the text colour transparent and adding a `text-shadow` with 0 values for the x and y offsets and a small blur radius of `1.5px` 
+
+![image](https://user-images.githubusercontent.com/99536044/205147811-cca0b63d-0579-4a85-b779-33ce527a8a67.png)
+
+
 ---
 
 ### Part two - Create a functioning stopwatch.
