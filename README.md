@@ -26,10 +26,17 @@ Please feel free to clone the repo using this url https://github.com/d0g3bl2/tpx
 
 ---
 
-### Deploy the 
-site
+### Part two - Create a functioning stopwatch.
 
-In order to use the site you can follow this link  to the repos github pages.
+- Inside the [timer_challenge](https://github.com/d0g3bl2/tpx_impact_challenge_fac26/tree/main/timer_challenge) directory is `index.html` which is linked to `timer.css` and `index.js` which can be found in the `src` directory.
+- The timer allows the user to start, stop and reset the time as well as render lap times into the UI which are stored in local storage as well as clearing local storage shouls they wish. The timer is responsive in mobile and desktop enviroments using
+
+`@media only screen and (max-width: 750px) {
+.controls {
+    display: flex;
+    flex-direction: column;
+}
+    }`
 
 
 
@@ -39,9 +46,10 @@ I broke the project down into the following user stories to get a clear idea of 
 
 - The user wants to view a time display ✔️ 
 - The current elapsed time should be in the following format 00:00:00:00 (hours, minutes, seconds, centiseconds) ✔️
-- Start button: A button to start or continue a timer. 
-- Pause button: A button to pause the running timer.
-- Reset button: A button to reset the timer to zero.
+- Start button: A button to start or continue a timer. ✔️
+- Pause button: A button to pause the running timer. ✔️
+- Reset button: A button to reset the timer to zero. ✔️
+- Lap button: A button to write the time to a list/table of laps (this would not pause the timer). The results should be shown on screen and still be visible if the page is refreshed. ✔️
 
 ---
 
