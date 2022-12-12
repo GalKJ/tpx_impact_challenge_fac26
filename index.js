@@ -8,8 +8,6 @@
     const clearLapStorageButton = document.querySelector('#clear-lap-storage');
     const lapList = document.querySelector('#lap-list');
 
-    const module = document.querySelectorAll("div.closed, div.open");
-
 
     let centiSeconds = 0;
     let interval = null;
